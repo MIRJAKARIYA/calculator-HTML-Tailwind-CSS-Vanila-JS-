@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Simple Calculator</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <div class="w-96 bg-gray-700 mx-auto my-40 p-4 rounded-2xl" id="main-container">
+        <div id="main-display" class="h-52 bg-slate-500 rounded-lg text-white">
+            <div id="input-show" class=" h-20 text-2xl overflow-x-auto overflow-y-hidden px-4 py-4"></div>
+            <div class="text-4xl h-28 mt-3 flex justify-end items-end px-4 py-4" id="result-show"></div>
+        </div>
+        <div class="button-container grid grid-cols-4 gap-2 mt-6">
+            <div class="bg-gray-400 text-white p-4 text-center text-3xl rounded-2xl cursor-pointer number-input">7</div>
+            <div class="bg-gray-400 text-white p-4 text-center text-3xl rounded-2xl cursor-pointer number-input">8</div>
+            <div class="bg-gray-400 text-white p-4 text-center text-3xl rounded-2xl cursor-pointer number-input">9</div>
+            <div class="bg-gray-400 text-white p-4 flex justify-center items-center text-5xl rounded-2xl cursor-pointer row-span-2 number-input">+</div>
+            <div class="bg-gray-400 text-white p-4 text-center text-3xl rounded-2xl cursor-pointer number-input">4</div>
+            <div class="bg-gray-400 text-white p-4 text-center text-3xl rounded-2xl cursor-pointer number-input">5</div>
+            <div class="bg-gray-400 text-white p-4 text-center text-3xl rounded-2xl cursor-pointer number-input">6</div>
+            <div class="bg-gray-400 text-white p-4 text-center text-3xl rounded-2xl cursor-pointer number-input">1</div>
+            <div class="bg-gray-400 text-white p-4 text-center text-3xl rounded-2xl cursor-pointer number-input">2</div>
+            <div class="bg-gray-400 text-white p-4 text-center text-3xl rounded-2xl cursor-pointer number-input">3</div>
+            <div class="bg-gray-400 text-white p-4 text-center text-3xl rounded-2xl cursor-pointer number-input">-</div>
+            <div class="bg-gray-400 text-white p-4 text-center text-3xl rounded-2xl cursor-pointer number-input">0</div>
+            <div class="bg-gray-400 text-white p-4 text-center text-3xl rounded-2xl cursor-pointer number-input">.</div>
+            <div class="bg-gray-400 text-white p-4 text-center text-3xl rounded-2xl cursor-pointer number-input">*</div>
+            <div class="bg-gray-400 text-white p-4 text-center text-3xl rounded-2xl cursor-pointer number-input">/</div>
+            <div class="bg-red-500 text-white p-4 text-center text-3xl rounded-2xl cursor-pointer" id="delete-button">del</div>
+            <div class="bg-red-500 text-white p-4 text-center text-3xl rounded-2xl cursor-pointer" id="clear-button">C</div>
+            <div class="bg-gray-400 text-white p-4 text-center text-3xl rounded-2xl cursor-pointer" id="ans-button">Ans</div>
+            <div class="bg-gray-400 text-white p-4 text-center text-3xl rounded-2xl cursor-pointer" id="equal-button">=</div>
+
+        </div>
+    </div>
+
+    <script src="calculator.js"></script>
+</body>
+</html>
